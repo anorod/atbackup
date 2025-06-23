@@ -1,4 +1,4 @@
-FROM alpine:3.20
+FROM alpine:3.22
 
 LABEL maintainer="Lorenzo Carbonell <a.k.a. atareao> lorenzo.carbonell.cerezo@gmail.com"
 
@@ -13,6 +13,7 @@ RUN apk add --update \
             fuse~=2.9 \
             dcron~=4.5 \
             run-parts~=4.11 && \
+            mariadb-connector-c~=3.4 && \
     rm -rf /var/cache/apk && \
     rm -rf /var/lib/app/lists* && \
     mkdir -p /root/.ssh
