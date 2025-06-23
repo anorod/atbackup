@@ -4,14 +4,14 @@ LABEL maintainer="Lorenzo Carbonell <a.k.a. atareao> lorenzo.carbonell.cerezo@gm
 
 RUN apk add --update \
             --no-cache \
-            openssh~=9.7 \
-            tzdata~=2024 \
-            curl~=8.8 \
-            borgbackup~=1.2 \
-            mariadb-client~=10.11 \
+            openssh~=10.0 \
+            tzdata~=2025 \
+            curl~=8.14 \
+            borgbackup~=1.4 \
+            mariadb-client~=11.4 \
             jq~=1.7 \
             fuse~=2.9 \
-            dcron~=4.5 \
+            dcron~=4.6 \
             run-parts~=4.11 && \
             mariadb-connector-c~=3.4 && \
     rm -rf /var/cache/apk && \
