@@ -9,7 +9,7 @@ RUN apk add --update \
             curl~=8.14 \
             borgbackup~=1.4 \
             mariadb-client~=11.4 \
-            jq~=1.7 \
+            jq~=1.8 \
             fuse~=2.9 \
             dcron~=4.6 \
             run-parts~=4.11 && \
