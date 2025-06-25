@@ -30,6 +30,7 @@ do
     mariadb-dump --all-databases \
                  --host=$MARIADB_HOST \
                  --port=$MARIADB_PORT \
+                 --skip-ssl \
                  --password=$MARIADB_PASSWORD > /backup/${MARIADB_HOST}_dump.sql
 done
 
