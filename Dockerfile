@@ -13,7 +13,7 @@ RUN apk add --update \
             fuse~=2.9 \
             dcron~=4.6 \
             run-parts~=4.11 \
-            mariadb-connector-c~=3.4 && \
+            mariadb-connector-c && \
     rm -rf /var/cache/apk && \
     rm -rf /var/lib/app/lists* && \
     mkdir -p /root/.ssh
