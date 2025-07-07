@@ -1,5 +1,5 @@
 #!/bin/sh
-#set -eo
+set -e
 
 CONFIG_FILE="/config.json"
 HOOKS_DIR="/hooks"
